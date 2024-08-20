@@ -1,0 +1,237 @@
+@media screen and (max-width:820px) {
+    body {
+        padding: 0 5%;
+        margin: 0;
+    }
+    header {
+        h1 {
+            font-size: 3rem;
+            margin: 0 0 40px 0;
+            letter-spacing: 4px;
+            line-height: 60px;
+            margin-top: 30vh;
+        }
+        h2 {
+            margin: 0 5%;
+        }
+        button {
+            height: 60px;
+            width: 60px;
+            font-size: 1.1rem;
+        }
+        nav {
+            ul:first-child {
+                max-width: 100%;
+                width: 100%;
+                li {
+                    font-size: 0.7rem;
+                }
+            }
+            ul:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+    section {
+        height: auto;
+        input[type=button] {
+            width: 150px;
+            height: 35px;
+            font-size: 0.7rem;
+        }
+        .first-section {
+            height: auto;
+            margin-bottom: 100px;
+            .massive {
+                height: auto;
+                .massive-p1 {
+                    height: auto;
+                    h4 {
+                        &:before, &:after {
+                            width: 25%;
+                        }
+                        font-weight: 200;
+                    }
+                    .mp1-text-container {
+                        margin: auto 10%;
+                        h2 {
+                            font-size: 2rem;
+                        }
+                        p {
+                            margin:0 10% 50px 10%;
+                        }
+                    }
+                }
+                .massive-p2 {
+                    height: auto;
+                    .massive-img-container {
+                        height: 200px;
+                    }
+                }
+                &:after {
+                    transform: translate(-50%, 100px);
+                }
+            }
+        }
+        .second-section {
+            height: auto;
+            position: relative;
+            .details {
+                height: auto;
+                .details-container {
+                    height: auto;
+                    flex-direction: column;
+                    margin: 0 10%;
+                    .dp1, .dp2 {
+                        padding: 0;
+                        margin-bottom: 100px;
+                        width: 100%;
+                        h5 {
+                            font-weight: 100;
+
+                        }
+                        h3 {
+                            font-size: 1.15rem;
+                            margin: 0 0 30px 0;
+                        }
+                        .details-img-container {
+                            height: 150px;
+                            margin: auto;
+                        }
+                    }
+                    .dp2 {
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            &:before {
+                position: absolute;
+                content:"";
+                height: 1px;
+                width: 119%;
+                background: $grey;
+                top : 50%;
+                transform: translateX(-8%);
+
+            }
+        }
+    }
+    footer {
+        height: auto;
+        .footer-container {
+            flex-direction: column;
+            .footer-p1 {
+                width: auto;
+                &:after {
+                    height: 1px;
+                    width: 100%;
+                    top : 100%;
+                }
+                .footer-p1-container {
+                    form {
+                        input[type=text] {
+                            height: 120px;
+                        }
+                        .f-submit {
+                            input {
+                                height: 30px;
+                                width: 150px;
+                                font-size: 0.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-p2 {
+                width: auto;
+                .footer-p2-container {
+                    height: 400px;
+                    grid-template-columns: 35% 65%;
+                    .fp2-gi1, .fp2-gi3, .fp2-gi5, .fp2-gi7 {
+                        &:after {
+                            width: 335%;
+                            top: 55%;
+                            left: -26%;
+                        }
+                    }
+                    .fp2-gi8 {
+                        transform: translateY(0);
+                        display: flex;
+                        align-items: center;
+                        .social-links {
+                            width: 80%;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    header {
+        h1 {
+            font-size: 2rem;
+            line-height: 50px;
+        }
+        h2 {
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        nav {
+            height: 70px;
+            ul:first-child {
+                li {
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }
+    section {
+        .first-section {
+            .massive {
+                .massive-p1 {
+                    h4 {
+                        &:before, &:after {
+                            width: 15%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .footer-container {
+            .footer-p2 {
+                .footer-p2-container {
+                    .fp2-gi1, .fp2-gi3, .fp2-gi5, .fp2-gi7 {
+                        .f-contact {
+                            font-size: 3vw;
+                        }
+                    }
+                    
+                    .fp2-gi2, .fp2-gi4, .fp2-gi6, .fp2-gi8 {
+                        p {
+                            font-size: 3.5vw;
+                        }
+                    }
+                    .fp2-gi8 {
+                        .social-links {
+                            button {
+                                height: 20px;
+                                width: 20px;
+                                font-size: 0.7rem;
+                                i {
+                                    transform: translateX(-25%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

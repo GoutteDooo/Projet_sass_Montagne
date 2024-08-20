@@ -1,0 +1,59 @@
+//variables
+$black : rgb(22, 22, 22);
+$white : rgb(255, 245, 245);
+$grey : rgb(220,220,220);
+
+@font-face {
+    font-family: "Inter";
+    src: url(/assets/fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url(./assets/fonts/Merriweather-Light.ttf);
+}
+
+@mixin centerChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    position: relative;
+    background: url("./assets/images/bg.jpg") fixed center/cover;
+    padding: 0 10%;
+    margin: 0;
+    overflow-x: hidden;
+    max-width: 1600px;
+    /* RAJOUTER UN FILTRE SUR LIMG DE FOND*/
+    // &::before{
+    //     content:"";
+    //     position: absolute;
+    //     width: 130%;
+    //     height: 100%;
+    //     top:0;
+    //     left:-15%;
+    //     background: rgba(0, 0, 0, 0.1);
+    //     z-index: -1;
+    // }
+    &:before {
+        content:"";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: $black;
+        animation: animBefore 1.5s ease forwards;
+        animation-delay: 0.15s;
+        @keyframes animBefore {
+            to {
+                opacity: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,156 @@
+footer {
+    background: $grey;
+    margin: 20px 0 ;
+    height: 600px;
+    .footer-container {
+        height: 100%;
+        display: flex;
+        // Copier pour p2
+        label {
+            font-family: inter;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 1.5px;
+            color: rgb(0,0,0,0.6);
+            margin: 23px 0 18px 0;
+        }
+        .footer-p1 {
+            position: relative;
+            height: 100%;
+            width: 50%;
+            &:after {
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 1px;
+                background: rgb(0,0,0,0.1);
+                right: 0;
+                top: 0;
+            }
+            .footer-p1-container {
+                height: 90%;
+                form {
+                    margin: 5% 10%;
+                    height: 100%;
+                    display: grid;
+                    grid-template-rows: 20% 20% 40% 20%;
+                    grid-template-areas: 
+                    "name"
+                    "email"
+                    "message"
+                    "submit";
+                    input,textarea {
+                        height: 50%;
+                        border-radius: 5px;
+                        border: solid 1px rgb(0, 0, 0, 0.1);
+                        background: none;
+                        font-family: Merriweather;
+                        padding-left: 10px;
+                    }
+                    textarea {
+                        height: 80%;
+                        resize: none;
+                    }
+                    .ga {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    .f-name, #f-name  {
+                        grid-area: name;
+                    }
+                    .f-email,#f-email  {
+                        grid-area: email;
+                    }
+                    .f-message, #f-message  {
+                        grid-area: message;
+                    }
+                    .f-submit,#f-submit {
+                        grid-area: submit;
+                    }
+                    input[type=submit] {
+                        margin: 0;
+                        background: none;
+                        font-family: inter;
+                        width: 180px;
+                        height: 45px;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        border: 2px solid rgba(0, 0, 0, 0.6);
+                        border-radius: 2px;
+                        color: rgba(0, 0, 0, 0.6);
+                        &:hover {
+                            background: $black;
+                            color: $white;
+                            cursor: pointer;
+                            transition: 0.2s;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-p2 {
+            width: 50%;
+            .footer-p2-container {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-columns: 33% 67%;
+                .fp2-gi1, .fp2-gi3, .fp2-gi5, .fp2-gi7 {
+                    transform: translate(25%,45%);
+                    width: 100%;
+                    position: relative;
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        background: rgb(0,0,0,0.1);
+                        height: 1px;
+                        width: 303%;
+                        top: 55%;
+                        left: -25%;
+                    }
+                    .f-contact {
+                    text-transform: uppercase;
+                    font-size: 0.7rem;
+                    letter-spacing: 1.5px;
+                    color: rgb(0,0,0,0.6);
+                    }
+                } 
+                .fp2-gi2, .fp2-gi4, .fp2-gi6, .fp2-gi8 {
+                    width: 100%;
+                    transform: translateY(45%);
+                    p {
+                        margin: 0;
+                        font-family: Merriweather;
+                        font-size: 0.8rem;
+                        color:rgb(0,0,0,0.6)
+                    }
+                }
+                .fp2-gi8 {
+                    .social-links {
+                        display: flex;
+                        justify-content: space-evenly;
+                        width: 55%;
+                        @media screen and (max-width:1100px) {
+                            width: 70%;
+                        }
+                        button {
+                            background: none;
+                            border-radius: 50%;
+                            height: 30px;
+                            width: 30px;
+                            border : 1px solid rgb(0,0,0,0.2);
+                            &:hover {
+                                cursor: pointer;
+                                color: $white;
+                                background: $black;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

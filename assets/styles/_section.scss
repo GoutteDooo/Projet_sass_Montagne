@@ -1,0 +1,163 @@
+section {
+    background: $white;
+    height: 2400px;
+    padding: 0 8%;
+    input[type=button] {
+        margin: 0;
+        background: none;
+        font-family: inter;
+        width: 180px;
+        height: 45px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: 2px solid black;
+        &:hover {
+            background: $black;
+            color: $white;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+    }
+    .first-section {
+            height: 65%;
+        .massive {
+            position: relative;
+            height: 100%;
+            text-align: center;
+            &:after {
+                content :"";
+                background: $grey;
+                height: 1px;
+                width: 119%;
+                position: absolute;
+                transform: translateX(-50%);
+            }
+        }
+        .massive-p1 {
+            height: 35%;
+        }
+        .massive-p2 {
+            height: 65%;
+            text-align: center;
+            .massive-img-container {
+                height: 80%;
+                margin-bottom: 50px;
+                .massive-img {
+                    height: 100%;
+                    width: 100%;
+                    background: url("/assets/images/pic01.jpg") center/cover;
+
+                }
+            }
+        }
+        h4 {
+            position: relative;
+            font-family: Merriweather;
+            margin: 0;
+            padding: 70px 0 0 0;
+            text-align: center;
+            &:before, &:after {
+                position: absolute;
+                content: "";
+                background: $grey;
+                width: 35%;
+                height: 1px;
+                transform: translateY(10px);
+                @media screen and (max-width: 900px) {
+                    width: 30%;
+                }
+            }
+            &:before {
+                left: 0;
+            }
+            &:after {
+                right: 0;
+            }
+        }
+        .mp1-text-container {
+            margin: 0 20%;
+            h2 {
+                text-align: center;
+                font-size: 3rem;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                padding: 40px 0 0 0;
+            }
+            p {
+                font-family: Merriweather;
+                font-style: italic;
+                font-size: 0.8rem;
+                line-height: 35px;
+                text-align: center;
+                @media screen and (max-width: 1000px) {
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    .second-section {
+        height: 35%;
+        .details {
+            height: 100%;
+            .details-container {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                .details {
+                    height: 100%;
+                    h5 {
+                        font-family: Merriweather;
+                        margin-top: 70px;
+                    }
+                    h3 {
+                        text-transform: uppercase;
+                        letter-spacing: 3px;
+                        margin: 0 20%;
+                        font-size: 1.3rem;
+                        height: 70px;
+                    }
+                }
+                p {
+                    margin-top: 50px;
+                    margin-bottom: 30px;
+                    font-family: Merriweather;
+                    font-size: 0.8rem;
+                    line-height: 30px;
+                    text-align: left;
+                }
+                .dp1 {
+                    position: relative;
+                    padding-right: 50px;
+                    width: 50%;
+                    .details-img-container{
+                        background: url("/assets/images/pic02.jpg") center/cover;
+                        height: 40%;
+                        width: 100%;
+                        margin-top: 30px;
+                    }
+                }
+                .dp2 {
+                    position: relative;
+                    padding-left: 50px;
+                    width: 50%;
+                    .details-img-container{
+                        background: url("/assets/images/pic03.jpg") center/cover;
+                        height: 40%;
+                        width: 100%;
+                        margin-top: 30px;
+                    }
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        background: $grey;
+                        width: 1px;
+                        height: 100%;
+                        text-align: left;
+                        left: 0%;
+                    }
+                }
+            }
+        }
+    }
+}
