@@ -5,7 +5,7 @@ $grey : rgb(220,220,220);
 
 @font-face {
     font-family: "Inter";
-    src: url(/assets/fonts/Inter-ExtraBold.ttf);
+    src: url(./assets/fonts/Inter-ExtraBold.ttf);
 }
 @font-face {
     font-family: "Merriweather";
@@ -30,17 +30,6 @@ body {
     margin: 0;
     overflow-x: hidden;
     max-width: 1600px;
-    /* RAJOUTER UN FILTRE SUR LIMG DE FOND*/
-    // &::before{
-    //     content:"";
-    //     position: absolute;
-    //     width: 130%;
-    //     height: 100%;
-    //     top:0;
-    //     left:-15%;
-    //     background: rgba(0, 0, 0, 0.1);
-    //     z-index: -1;
-    // }
     &:before {
         content:"";
         position: absolute;
