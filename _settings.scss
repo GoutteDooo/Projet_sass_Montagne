@@ -26,7 +26,10 @@ html {
 
 body {
     position: relative;
-    background: url("./assets/images/bg.jpg") fixed center/cover;
+    background-image: url("./assets/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     padding: 0 10%;
     margin: 0;
     overflow-x: hidden;
@@ -38,7 +41,7 @@ body {
         width: 100%;
         top: 0;
         left: 0;
-        background: $black;
+        background: black;
         animation: animBefore 1.5s ease forwards;
         animation-delay: 0.15s;
         @keyframes animBefore {
