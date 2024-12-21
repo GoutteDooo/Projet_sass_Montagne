@@ -35,6 +35,8 @@
     section {
         height: auto;
         input[type=button] {
+            -webkit-appearance: none; // Désactive l'apparence par défaut
+            appearance: none;         // Désactive l'apparence standard
             width: 150px;
             height: 35px;
             font-size: 0.7rem;

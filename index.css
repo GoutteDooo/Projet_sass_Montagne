@@ -602,6 +602,9 @@ footer .footer-container .footer-p2 .footer-p2-container .fp2-gi8 .social-links 
     height: auto;
   }
   section input[type=button] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
     width: 150px;
     height: 35px;
     font-size: 0.7rem;
